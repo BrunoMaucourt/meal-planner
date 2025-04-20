@@ -2,6 +2,7 @@
 
 namespace App\Entity\Recipe;
 
+use App\Enum\MealTypeEnum;
 use App\Repository\Recipe\RecipeRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -22,8 +23,8 @@ class Recipe
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $description = null;
 
-    #[ORM\Column(length: 255, nullable: true)]
-    private ?string $type = null;
+    #[ORM\Column(length: 255, nullable: true, enumType: MealTypeEnum::class)]
+    private ?MealTypeEnum $type = null;
 
     #[ORM\Column]
     private ?int $preparation_time = null;
@@ -94,12 +95,12 @@ class Recipe
         return $this;
     }
 
-    public function getType(): ?string
+    public function getType(): ?MealTypeEnum
     {
         return $this->type;
     }
 
-    public function setType(?string $type): static
+    public function setType(?MealTypeEnum $type): static
     {
         $this->type = $type;
 
