@@ -2,7 +2,11 @@
 
 namespace App\Controller\Admin;
 
+use App\EasyAdmin\DifficultyField;
+use App\EasyAdmin\UnitField;
 use App\Entity\Recipe\RecipeIngredient;
+use App\Enum\MealTypeEnum;
+use App\Enum\UnitEnum;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\NumberField;
@@ -31,7 +35,10 @@ class RecipeIngredientCrudController extends AbstractCrudController
             ->setColumns(4)
         ;
 
-        yield TextField::new('unit', $this->translator->trans('Unit'))
+        yield UnitField::new('unit', $this->translator->trans('Unit'))
+            ->formatValue(static function (UnitEnum $unitEnum): string {
+                return $unitEnum->enumToString();
+            })
             ->setColumns(4)
         ;
     }
