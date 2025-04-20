@@ -1,0 +1,27 @@
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block content_title %}
+    <h1 class="text-center my-4">Bienvenue sur votre tableau de bord</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1 class="mb-4">{{ 'Meal Planner Dashboard'|trans }}</h1>
+
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card shadow-sm text-white bg-primary">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ 'Recipes'|trans }}</h5>
+                        <p class="card-text fs-4">{{ recipesCount }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>{{ 'Quick Actions'|trans }}</h3>
+
+        <h3>{{ 'Recently Forgotten Recipes'|trans }}</h3>
+
+    </div>
+{% endblock %}
