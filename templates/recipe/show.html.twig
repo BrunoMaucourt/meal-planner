@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ recipe.name }}{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1 class="display-4 mb-3">{{ recipe.name }}</h1>
+
+{#        {% if recipe.photo %}#}
+{#            <img src="{{ asset('uploads/recipes/' ~ recipe.photo) }}" class="img-fluid rounded mb-4" alt="{{ recipe.name }}">#}
+{#        {% endif %}#}
+
+        <div class="mb-4">
+            <p class="lead">{{ recipe.description }}</p>
+            <span class="badge bg-primary">Difficulty: {{ recipe.difficulty }}</span>
+            <span class="badge bg-success">{{ recipe.type.enumToString }}</span>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <strong>🕒 Preparation</strong><br>{{ recipe.preparationTime }} min
+            </div>
+            <div class="col-md-3">
+                <strong>🔥 Cooking</strong><br>{{ recipe.cookingTime }} min
+            </div>
+            <div class="col-md-3">
+                <strong>👥 Servings</strong><br>{{ recipe.servings }}
+            </div>
+            <div class="col-md-3">
+                <strong>⚡ Calories/serving</strong><br> kcal
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>🥣 Ingredients</h2>
+        <ul class="list-group mb-4">
+            {% for ri in recipe.ingredients %}
+                <li class="list-group-item">
+                    {{ ri.quantity }} {{ ri.unit.label|default(ri.unit.enumToString|lower) }} of {{ ri.ingredient.name }}
+                </li>
+            {% endfor %}
+        </ul>
+
+        <h2>🛠 Utensils</h2>
+        <ul class="list-inline mb-4">
+            {% for utensil in recipe.utensils %}
+                <li class="list-inline-item badge bg-secondary me-2">{{ utensil.name }}</li>
+            {% else %}
+                <li>{{ 'No specific utensils required.'|trans }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>📋 Steps</h2>
+        <ol class="list-group list-group-numbered mb-5">
+            {% for step in recipe.steps|sort((a, b) => a.stepOrder <=> b.stepOrder) %}
+                <li class="list-group-item">{{ step.instruction }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+{% endblock %}
