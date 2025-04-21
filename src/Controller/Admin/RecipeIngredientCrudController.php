@@ -36,8 +36,8 @@ class RecipeIngredientCrudController extends AbstractCrudController
         ;
 
         yield UnitField::new('unit', $this->translator->trans('Unit'))
-            ->formatValue(static function (UnitEnum $unitEnum): string {
-                return $unitEnum->enumToString();
+            ->formatValue(static function (?UnitEnum $unitEnum): string {
+                return $unitEnum?->enumToString() ?? '';
             })
             ->setColumns(4)
         ;
