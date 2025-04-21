@@ -2,10 +2,12 @@
 
 namespace App\Entity\Recipe;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Repository\Recipe\RecipeStepRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
+#[ApiResource]
 #[ORM\Entity(repositoryClass: RecipeStepRepository::class)]
 class RecipeStep
 {

@@ -2,6 +2,7 @@
 
 namespace App\Entity\Recipe;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Enum\MealTypeEnum;
 use App\Repository\Recipe\RecipeRepository;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -9,6 +10,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
+#[ApiResource]
 #[ORM\Entity(repositoryClass: RecipeRepository::class)]
 class Recipe
 {

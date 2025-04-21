@@ -2,11 +2,13 @@
 
 namespace App\Entity\Planning;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Entity\Recipe\Recipe;
 use App\Repository\Planning\MealRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
+#[ApiResource]
 #[ORM\Entity(repositoryClass: MealRepository::class)]
 class Meal
 {

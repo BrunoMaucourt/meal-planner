@@ -2,9 +2,11 @@
 
 namespace App\Entity\Recipe;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Repository\Recipe\UtensilRepository;
 use Doctrine\ORM\Mapping as ORM;
 
+#[ApiResource]
 #[ORM\Entity(repositoryClass: UtensilRepository::class)]
 class Utensil
 {

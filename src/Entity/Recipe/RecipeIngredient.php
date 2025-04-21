@@ -2,10 +2,12 @@
 
 namespace App\Entity\Recipe;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Enum\UnitEnum;
 use App\Repository\Recipe\RecipeIngredientRepository;
 use Doctrine\ORM\Mapping as ORM;
 
+#[ApiResource]
 #[ORM\Entity(repositoryClass: RecipeIngredientRepository::class)]
 class RecipeIngredient
 {
