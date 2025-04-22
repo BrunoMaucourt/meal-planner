@@ -53,7 +53,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud($this->translator->trans('Ingredients'), 'fa-solid fa-carrot', Ingredient::class);
         yield MenuItem::linkToCrud($this->translator->trans('Ingredients - recipe'), 'fa-solid fa-burger', RecipeIngredient::class);
         yield MenuItem::linkToCrud($this->translator->trans('Utensils'), 'fa-solid fa-utensils', Utensil::class);
-        yield MenuItem::section('Meal');
+        yield MenuItem::section('Planning');
         yield MenuItem::linkToCrud($this->translator->trans('Meal'), 'fa-solid fa-calendar-days', Meal::class);
         yield MenuItem::section('User');
         yield MenuItem::linkToCrud($this->translator->trans('User'), 'fa-solid fa-utensils', User::class);
