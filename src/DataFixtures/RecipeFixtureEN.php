@@ -16,6 +16,8 @@ use PhpOffice\PhpSpreadsheet\Reader\Xls;
 
 class RecipeFixtureEN extends Fixture implements FixtureGroupInterface
 {
+    private array $utensilsData = [];
+
     public static function getGroups(): array
     {
         return ['en'];
@@ -47,6 +49,7 @@ class RecipeFixtureEN extends Fixture implements FixtureGroupInterface
             'Measuring spoon',
             'Baking tray',
             'Colander',
+            'Oven',
             'Oven mitt',
             'Rolling pin',
             'Ladle',
@@ -57,6 +60,7 @@ class RecipeFixtureEN extends Fixture implements FixtureGroupInterface
         foreach ($utensilsData as $utensilData) {
             $utensil = new Utensil();
             $utensil->setName($utensilData);
+            $this->utensilsData[] = $utensil;
             $manager->persist($utensil);
         }
     }
@@ -105,6 +109,17 @@ class RecipeFixtureEN extends Fixture implements FixtureGroupInterface
         $recipe->setCookingTime(40);
         $recipe->setDifficulty(1);
         $recipe->setType(MealTypeEnum::vegetarian);
+
+        foreach ($this->utensilsData as $utensilData) {
+            if (
+                $utensilData->getName() === 'Cutting board' ||
+                $utensilData->getName() === 'Knife' ||
+                $utensilData->getName() === 'Oven mitt' ||
+                $utensilData->getName() === 'Oven mitt'
+            ) {
+                $recipe->addUtensil($utensilData);
+            }
+        }
 
         $manager->persist($recipe);
 
