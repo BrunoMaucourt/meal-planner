@@ -26,6 +26,11 @@ class RecipeStep
     #[ORM\JoinColumn(nullable: false)]
     private ?Recipe $recipe = null;
 
+    public function __toString(): string
+    {
+        return $this->stepOrder;
+    }
+
     public function getId(): ?int
     {
         return $this->id;

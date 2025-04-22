@@ -30,6 +30,12 @@ class RecipeIngredient
     #[ORM\JoinColumn(nullable: false)]
     private ?Ingredient $ingredient = null;
 
+
+    public function __toString(): string
+    {
+        return $this->ingredient->getName() . ' ' . $this->getQuantity() . ' ' . $this->getUnit()->enumToString();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
