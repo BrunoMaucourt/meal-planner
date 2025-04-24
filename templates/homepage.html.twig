@@ -6,17 +6,17 @@
     <div class="container py-5">
         <div class="text-center mb-5">
             <h1 class="display-4">🍽 Meal Planner</h1>
-            <p class="lead">Plan your meals, track nutrition, and rediscover your favorite recipes.</p>
-            <a href="{{ path('recipe_index') }}" class="btn btn-primary btn-lg mt-3">Browse Recipes</a>
+            <p class="lead">{{ 'Plan your meals, track nutrition, and rediscover your favorite recipes.'|trans }}</p>
+            <a href="{{ path('recipe_index') }}" class="btn btn-primary btn-lg mt-3">{{ 'Browse Recipes'|trans }}</a>
         </div>
 
         <div class="row text-center g-4">
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">📅 Weekly Planning</h5>
-                        <p class="card-text">Organize your week and assign meals to each day.</p>
-                        <a href="#" class="btn btn-outline-primary">Plan my week</a>
+                        <h5 class="card-title">📅 {{ 'Weekly Planning'|trans }}</h5>
+                        <p class="card-text">{{ 'Organize your week and assign meals to each day.'|trans }}</p>
+                        <a href="#" class="btn btn-outline-primary">{{ 'Plan my week'|trans }}</a>
                     </div>
                 </div>
             </div>
@@ -24,9 +24,9 @@
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">🥕 Nutrition Tracker</h5>
-                        <p class="card-text">Estimate calories, proteins and nutrients for each meal.</p>
-                        <a href="#" class="btn btn-outline-success">Track meals</a>
+                        <h5 class="card-title">🥕 {{ 'Nutrition Tracker'|trans }}</h5>
+                        <p class="card-text">{{ 'Estimate calories, proteins and nutrients for each meal.'|trans }}</p>
+                        <a href="#" class="btn btn-outline-success">{{ 'Track meals'|trans }}</a>
                     </div>
                 </div>
             </div>
@@ -34,9 +34,9 @@
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">🧠 Forgotten Recipes</h5>
-                        <p class="card-text">See meals you haven't cooked in a while.</p>
-                        <a href="#" class="btn btn-outline-warning">Rediscover dishes</a>
+                        <h5 class="card-title">🧠 {{ 'Forgotten Recipes'|trans }}</h5>
+                        <p class="card-text">{{ 'See meals you haven\'t cooked in a while.'|trans }}</p>
+                        <a href="#" class="btn btn-outline-warning">{{ 'Rediscover dishes'|trans }}</a>
                     </div>
                 </div>
             </div>

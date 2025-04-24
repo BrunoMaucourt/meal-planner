@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class RecipeController extends AbstractController
 {
-    #[Route('/recipes', name: 'recipe_index')]
+    #[Route('/{_locale<%app.supported_locales%>}/recipes', name: 'recipe_index')]
     public function index(RecipeRepository $repo): Response
     {
         return $this->render('recipe/index.html.twig', [
@@ -18,7 +18,7 @@ class RecipeController extends AbstractController
         ]);
     }
 
-    #[Route('/recipes/{id}', name: 'recipe_show')]
+    #[Route('/{_locale<%app.supported_locales%>}/recipes/{id}', name: 'recipe_show')]
     public function show(Recipe $recipe): Response
     {
         return $this->render('recipe/show.html.twig', [

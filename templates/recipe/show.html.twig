@@ -12,28 +12,28 @@
 
         <div class="mb-4">
             <p class="lead">{{ recipe.description }}</p>
-            <span class="badge bg-primary">Difficulty: {{ recipe.difficulty }}</span>
+            <span class="badge bg-primary">{{ 'Difficulty'|trans }}: {{ recipe.difficulty }}</span>
             <span class="badge bg-success">{{ recipe.type.enumToString }}</span>
         </div>
 
         <div class="row mb-4">
             <div class="col-md-3">
-                <strong>🕒 Preparation</strong><br>{{ recipe.preparationTime }} min
+                <strong>🕒 {{ 'Preparation'|trans }}</strong><br>{{ recipe.preparationTime }} min
             </div>
             <div class="col-md-3">
-                <strong>🔥 Cooking</strong><br>{{ recipe.cookingTime }} min
+                <strong>🔥 {{ 'Cooking'|trans }}</strong><br>{{ recipe.cookingTime }} min
             </div>
             <div class="col-md-3">
-                <strong>👥 Servings</strong><br>{{ recipe.servings }}
+                <strong>👥 {{ 'Servings'|trans }}</strong><br>{{ recipe.servings }}
             </div>
             <div class="col-md-3">
-                <strong>⚡ Calories/serving</strong><br> kcal
+                <strong>⚡ {{ 'Calories/serving'|trans }}</strong><br> {{ nutritionalData['calories']}} kcal
             </div>
         </div>
 
         <hr>
 
-        <h2>🥣 Ingredients</h2>
+        <h2>🥣 {{ 'Ingredients'|trans }}</h2>
         <ul class="list-group mb-4">
             {% for ri in recipe.ingredients %}
                 <li class="list-group-item">
@@ -42,7 +42,7 @@
             {% endfor %}
         </ul>
 
-        <h2>🛠 Utensils</h2>
+        <h2>🍴 {{ 'Utensils'|trans }}</h2>
         <ul class="list-inline mb-4">
             {% for utensil in recipe.utensils %}
                 <li class="list-inline-item badge bg-secondary me-2">{{ utensil.name }}</li>
@@ -51,8 +51,8 @@
             {% endfor %}
         </ul>
 
-        <h2>📋 Steps</h2>
-        <ol class="list-group list-group-numbered mb-5">
+        <h2>📋 {{ 'Steps'|trans }}</h2>
+        <ol class="list-group list-group-numbered mb-4">
             {% for step in recipe.steps|sort((a, b) => a.stepOrder <=> b.stepOrder) %}
                 <li class="list-group-item">{{ step.instruction }}</li>
             {% endfor %}

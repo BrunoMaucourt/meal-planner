@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="wbMeKOh" resname="Name">
+        <source>Name</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="DL_wAnF" resname="Type">
+        <source>Type</source>
+        <target>Type</target>
+      </trans-unit>
+      <trans-unit id="k6riWiF" resname="Origin">
+        <source>Origin</source>
+        <target>Origine</target>
+      </trans-unit>
+      <trans-unit id="HXbvKNQ" resname="Cooking time">
+        <source>Cooking time</source>
+        <target>Temps de cuisson</target>
+      </trans-unit>
+      <trans-unit id="MKH2XxS" resname="Preparation time">
+        <source>Preparation time</source>
+        <target>Temps de préparation</target>
+      </trans-unit>
+      <trans-unit id="EVrhSGQ" resname="Servings">
+        <source>Servings</source>
+        <target>Portions</target>
+      </trans-unit>
+      <trans-unit id="i3AJ6Na" resname="Difficulty">
+        <source>Difficulty</source>
+        <target>Difficulté</target>
+      </trans-unit>
+      <trans-unit id="NMmVjl0" resname="Description">
+        <source>Description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="hRBmAmd" resname="Recipe steps">
+        <source>Recipe steps</source>
+        <target>Étapes de la recette</target>
+      </trans-unit>
+      <trans-unit id="R9U19cS" resname="Recipe ingredients">
+        <source>Recipe ingredients</source>
+        <target>Ingrédients de la recette</target>
+      </trans-unit>
+      <trans-unit id="5YlHvXV" resname="Recipe utensils">
+        <source>Recipe utensils</source>
+        <target>Ustensiles de la recette</target>
+      </trans-unit>
+      <trans-unit id="3zAjYy1" resname="Recipe">
+        <source>Recipe</source>
+        <target>Recette</target>
+      </trans-unit>
+      <trans-unit id="StHHp.J" resname="Ingredients">
+        <source>Ingredients</source>
+        <target>Ingrédients</target>
+      </trans-unit>
+      <trans-unit id="Y8xMCxn" resname="Ingredients - recipe">
+        <source>Ingredients - recipe</source>
+        <target>Ingrédients - recette</target>
+      </trans-unit>
+      <trans-unit id="sArlegO" resname="Utensils">
+        <source>Utensils</source>
+        <target>Ustensiles</target>
+      </trans-unit>
+      <trans-unit id="W43AqOq" resname="Meal">
+        <source>Meal</source>
+        <target>Repas</target>
+      </trans-unit>
+      <trans-unit id="TkiKoB6" resname="User">
+        <source>User</source>
+        <target>Utilisateur</target>
+      </trans-unit>
+      <trans-unit id="JA0Laul" resname="Step number">
+        <source>Step number</source>
+        <target>Numéro d'étape</target>
+      </trans-unit>
+      <trans-unit id="pw1d.v8" resname="Instruction">
+        <source>Instruction</source>
+        <target>Instruction</target>
+      </trans-unit>
+      <trans-unit id="wv5AF_O" resname="Calories per 100g">
+        <source>Calories per 100g</source>
+        <target>Calories pour 100g</target>
+      </trans-unit>
+      <trans-unit id="TOHoHGL" resname="Proteins per 100g">
+        <source>Proteins per 100g</source>
+        <target>Protéines pour 100g</target>
+      </trans-unit>
+      <trans-unit id="Je3Ped." resname="Carbs per 100g">
+        <source>Carbs per 100g</source>
+        <target>Glucides pour 100g</target>
+      </trans-unit>
+      <trans-unit id="06xS4Am" resname="Fats per 100g">
+        <source>Fats per 100g</source>
+        <target>Lipides pour 100g</target>
+      </trans-unit>
+      <trans-unit id="yiTbWHt" resname="Fibers per 100g">
+        <source>Fibers per 100g</source>
+        <target>Fibres pour 100g</target>
+      </trans-unit>
+      <trans-unit id=".pEQgOp" resname="Data source">
+        <source>Data source</source>
+        <target>Source des données</target>
+      </trans-unit>
+      <trans-unit id="iMWvDcr" resname="Ingredient">
+        <source>Ingredient</source>
+        <target>Ingrédient</target>
+      </trans-unit>
+      <trans-unit id="XGlygks" resname="Quantity">
+        <source>Quantity</source>
+        <target>Quantité</target>
+      </trans-unit>
+      <trans-unit id="EYC9aNd" resname="Unit">
+        <source>Unit</source>
+        <target>Unité</target>
+      </trans-unit>
+      <trans-unit id="38z3QvA" resname="Read">
+        <source>Read</source>
+        <target>Lire</target>
+      </trans-unit>
+      <trans-unit id="z1HNKxg" resname="Preparation">
+        <source>Preparation</source>
+        <target>Préparation</target>
+      </trans-unit>
+      <trans-unit id="hEDnE75" resname="Cooking">
+        <source>Cooking</source>
+        <target>Cuisson</target>
+      </trans-unit>
+      <trans-unit id="_5s3Jx7" resname="Calories/serving">
+        <source>Calories/serving</source>
+        <target>Calories / portion</target>
+      </trans-unit>
+      <trans-unit id="Z9X3D9b" resname="No specific utensils required.">
+        <source>No specific utensils required.</source>
+        <target>Pas d’ustensiles spécifiques requis.</target>
+      </trans-unit>
+      <trans-unit id="AOEC242" resname="Steps">
+        <source>Steps</source>
+        <target>Étapes</target>
+      </trans-unit>
+      <trans-unit id="3OZ9yKa" resname="Nutritionnal data">
+        <source>Nutritionnal data</source>
+        <target>Données nutritionnelles</target>
+      </trans-unit>
+      <trans-unit id="txMwo5G" resname="Calories">
+        <source>Calories</source>
+        <target>Calories</target>
+      </trans-unit>
+      <trans-unit id="ksdU3.Y" resname="Proteins">
+        <source>Proteins</source>
+        <target>Protéines</target>
+      </trans-unit>
+      <trans-unit id="MS_3lON" resname="Fats">
+        <source>Fats</source>
+        <target>Lipides</target>
+      </trans-unit>
+      <trans-unit id="c6VPltT" resname="Carbs">
+        <source>Carbs</source>
+        <target>Glucides</target>
+      </trans-unit>
+      <trans-unit id="RAmlYL3" resname="Fibers">
+        <source>Fibers</source>
+        <target>Fibres</target>
+      </trans-unit>
+      <trans-unit id="eZvxLOk" resname="Meal Planner Dashboard">
+        <source>Meal Planner Dashboard</source>
+        <target>Tableau de bord du planificateur</target>
+      </trans-unit>
+      <trans-unit id="Ee2Pk_b" resname="Recipes">
+        <source>Recipes</source>
+        <target>Recettes</target>
+      </trans-unit>
+      <trans-unit id="S_Y8fFT" resname="Quick Actions">
+        <source>Quick Actions</source>
+        <target>Actions rapides</target>
+      </trans-unit>
+      <trans-unit id="1Diglz3" resname="Recently Forgotten Recipes">
+        <source>Recently Forgotten Recipes</source>
+        <target>Recettes oubliées récemment</target>
+      </trans-unit>
+      <trans-unit id="k8slf9i" resname="Plan your meals, track nutrition, and rediscover your favorite recipes.">
+        <source>Plan your meals, track nutrition, and rediscover your favorite recipes.</source>
+        <target>Planifiez vos repas, suivez votre nutrition et redécouvrez vos recettes préférées.</target>
+      </trans-unit>
+      <trans-unit id="jwQqWYx" resname="Browse Recipes">
+        <source>Browse Recipes</source>
+        <target>Voir les recettes</target>
+      </trans-unit>
+      <trans-unit id="WOor7DM" resname="Weekly Planning">
+        <source>Weekly Planning</source>
+        <target>Planification hebdomadaire</target>
+      </trans-unit>
+      <trans-unit id="kxWKN26" resname="Organize your week and assign meals to each day.">
+        <source>Organize your week and assign meals to each day.</source>
+        <target>Organisez votre semaine et assignez des repas à chaque jour.</target>
+      </trans-unit>
+      <trans-unit id="fVc2OZ3" resname="Plan my week">
+        <source>Plan my week</source>
+        <target>Planifier ma semaine</target>
+      </trans-unit>
+      <trans-unit id="gXi32.4" resname="Nutrition Tracker">
+        <source>Nutrition Tracker</source>
+        <target>Suivi nutritionnel</target>
+      </trans-unit>
+      <trans-unit id="ypbQN_W" resname="Estimate calories, proteins and nutrients for each meal.">
+        <source>Estimate calories, proteins and nutrients for each meal.</source>
+        <target>Estimez les calories, protéines et nutriments de chaque repas.</target>
+      </trans-unit>
+      <trans-unit id="0dvuZsQ" resname="Track meals">
+        <source>Track meals</source>
+        <target>Suivre les repas</target>
+      </trans-unit>
+      <trans-unit id="MnVL4AL" resname="Forgotten Recipes">
+        <source>Forgotten Recipes</source>
+        <target>Recettes oubliées</target>
+      </trans-unit>
+      <trans-unit id="x2wtIO_" resname="See meals you haven't cooked in a while.">
+        <source>See meals you haven't cooked in a while.</source>
+        <target>Consultez les plats que vous n’avez pas cuisinés depuis longtemps.</target>
+      </trans-unit>
+      <trans-unit id="GerrzCB" resname="Rediscover dishes">
+        <source>Rediscover dishes</source>
+        <target>Redécouvrir des plats</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
