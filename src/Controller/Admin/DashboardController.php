@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
-#[AdminDashboard(routePath: '/admin', routeName: 'admin')]
+#[AdminDashboard(routePath: '/{_locale<%app.supported_locales%>}/admin', routeName: 'admin')]
 class DashboardController extends AbstractDashboardController
 {
     public function __construct(
@@ -27,7 +27,7 @@ class DashboardController extends AbstractDashboardController
     ){
     }
 
-    #[Route('/admin', name: 'admin')]
+    #[Route('/{_locale<%app.supported_locales%>}/admin', name: 'admin')]
     public function index(): Response
     {
         $recipesCount = $this->entityManager->getRepository(Recipe::class)->count([]);
