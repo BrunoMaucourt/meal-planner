@@ -57,5 +57,33 @@
                 <li class="list-group-item">{{ step.instruction }}</li>
             {% endfor %}
         </ol>
+
+        <h2>📊 {{ 'Nutritionnal data'|trans }}</h2>
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <h3>{{ 'Calories'|trans }}</h3>
+                        <p>{{ nutritionalData['calories']}} kcal</p>
+                    </div>
+                    <div class="col">
+                        <h3>{{ 'Proteins'|trans }}</h3>
+                        <p>{{ nutritionalData['proteins']}} g</p>
+                    </div>
+                    <div class="col">
+                        <h3>{{ 'Fats'|trans }}</h3>
+                        <p>{{ nutritionalData['fats']}} g</p>
+                    </div>
+                    <div class="col">
+                        <h3>{{ 'Carbs'|trans }}</h3>
+                        <p>{{ nutritionalData['carbs']}} g</p>
+                    </div>
+                    <div class="col">
+                        <h3>{{ 'Fibers'|trans }}</h3>
+                        <p>{{ nutritionalData['fibers']}} g</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
